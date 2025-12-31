@@ -1,11 +1,9 @@
-
 import React from 'react';
 import { MODULES, BONUSES, TESTIMONIALS } from '../constants';
 
 const SalesPage: React.FC = () => {
   const checkoutUrl = "https://www.ggcheckout.com/checkout/v2/exCM2OIbxCt2JbbNXKeI";
 
-  // Links diretos fornecidos para os prints dos alunos
   const studentResults = [
     { url: "https://i.postimg.cc/xCH7fpKD/6.webp", label: "06" },
     { url: "https://i.postimg.cc/L4t7G79t/5.webp", label: "05" },
@@ -42,7 +40,8 @@ const SalesPage: React.FC = () => {
           <div className="relative aspect-video w-full max-w-3xl mx-auto bg-slate-900 rounded-3xl overflow-hidden border-4 border-slate-800 vsl-shadow">
             <iframe
               src="https://fast.wistia.net/embed/iframe/bzz2lmbz2v?seo=false&videoFoam=true"
-              allow="autoplay; fullscreen"
+              title="VSL Video"
+              allow="autoplay; fullscreen; picture-in-picture"
               allowTransparency={true}
               frameBorder="0"
               scrolling="no"
@@ -50,7 +49,6 @@ const SalesPage: React.FC = () => {
               name="wistia_embed"
               width="100%"
               height="100%"
-              style={{ aspectRatio: '16/9' }}
             ></iframe>
           </div>
 
@@ -190,7 +188,6 @@ const SalesPage: React.FC = () => {
          <div className="max-w-6xl mx-auto">
            <h2 className="text-3xl font-black text-center mb-12 uppercase tracking-widest text-slate-500">Resultados Reais de Pessoas Comuns</h2>
            
-           {/* Depoimentos em Texto */}
            <div className="columns-1 md:columns-3 gap-6 space-y-6 mb-20">
              {TESTIMONIALS.concat(TESTIMONIALS).map((t, idx) => (
                <div key={idx} className="break-inside-avoid bg-slate-800 p-6 rounded-2xl border border-slate-700 shadow-xl">
@@ -206,7 +203,6 @@ const SalesPage: React.FC = () => {
              ))}
            </div>
 
-           {/* Galeria de Fotos de Alunos (Prints do WhatsApp) */}
            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {studentResults.map((result, index) => (
                 <div key={index} className="group relative overflow-hidden rounded-3xl border-4 border-slate-800 shadow-2xl transition-all duration-300 hover:border-indigo-500/50">

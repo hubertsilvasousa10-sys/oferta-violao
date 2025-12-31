@@ -5,25 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>Master Your Skill - Funnel</title>
+    <title>Treinamento de Violão - Oficial</title>
     
-    <!-- Anti-Circular Reference Patch for Tracking Scripts -->
-    <script>
-      (function() {
-        const originalStringify = JSON.stringify;
-        JSON.stringify = function(value, replacer, space) {
-          const cache = new Set();
-          return originalStringify(value, (key, val) => {
-            if (typeof val === 'object' && val !== null) {
-              if (cache.has(val)) return; // Ignora referências circulares
-              cache.add(val);
-            }
-            return replacer ? replacer(key, val) : val;
-          }, space);
-        };
-      })();
-    </script>
-
     <!-- UTMify & Pixel Script -->
     <script>
       window.pixelId = "69528bd711d34c5003208b75";
@@ -51,20 +34,6 @@
       }
       .vsl-shadow {
         box-shadow: 0 0 50px -12px rgba(99, 102, 241, 0.5);
-      }
-      .glass-button {
-        background: white;
-        border: 1px solid #E2E8F0;
-        transition: all 0.2s ease;
-      }
-      .glass-button:hover {
-        border-color: #FF6600;
-        background: #FFFBF7;
-      }
-      .glass-button.selected {
-        border-color: #FF6600;
-        background: #FFFBF7;
-        box-shadow: 0 0 0 1px #FF6600;
       }
     </style>
   <script type="importmap">

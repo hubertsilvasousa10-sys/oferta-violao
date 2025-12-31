@@ -1,5 +1,5 @@
 
-export type FunnelState = 'QUIZ' | 'SALES_PAGE' | 'OFFER_SPECIAL';
+export type FunnelState = 'QUIZ' | 'SALES_PAGE';
 
 export interface QuizAnswer {
   questionId: number;

@@ -290,7 +290,7 @@ const SalesPage: React.FC = () => {
               <p className="text-slate-400 line-through text-lg">De R$ 665,00</p>
               <p className="text-xl font-bold text-green-400 uppercase tracking-tighter">Por Apenas um Pagamento Único de:</p>
               <div className="text-7xl md:text-9xl font-black text-white tracking-tighter drop-shadow-2xl">
-                <span className="text-3xl md:text-5xl align-top">R$</span>15,99
+                <span className="text-3xl md:text-5xl align-top">R$</span>29,99
               </div>
               <p className="text-slate-400 font-medium">Sem mensalidades • Acesso para sempre</p>
             </div>

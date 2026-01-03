@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 
 const SpecialOffer: React.FC = () => {
@@ -31,11 +30,11 @@ const SpecialOffer: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4">
             <h1 className="text-4xl md:text-7xl font-black leading-tight text-white italic">
-              🎁 Oferta Especial de <span className="text-orange-500 underline decoration-orange-500/30">Última Chance</span> – 50% OFF
+              🎁 Oferta Especial de <span className="text-orange-500 underline decoration-orange-500/30">Última Chance</span> – DESCONTO EXCLUSIVO
             </h1>
             <h2 className="text-xl md:text-2xl text-slate-400 font-medium max-w-2xl mx-auto leading-relaxed">
               Você quase saiu… então liberamos algo exclusivo para você. <br className="hidden md:block" />
-              O mesmo produto pela metade do preço da oferta original.
+              Garante o acesso agora pelo menor preço possível.
             </h2>
           </div>
 
@@ -54,7 +53,7 @@ const SpecialOffer: React.FC = () => {
           <div className="max-w-2xl mx-auto bg-slate-900/50 p-8 rounded-[2.5rem] border border-slate-800">
             <p className="text-lg text-slate-300 leading-relaxed">
               Sim, é isso mesmo. Você sabe quanto custa o valor original. <br />
-              Agora você pode garantir por 50% do preço – oferta única, exclusiva e que não estará disponível novamente. <br />
+              Agora você pode garantir por um preço irrisório – oferta única, exclusiva e que não estará disponível novamente. <br />
               <span className="text-white font-bold">Se você recusar aqui, o preço volta ao normal.</span>
             </p>
           </div>
@@ -66,7 +65,7 @@ const SpecialOffer: React.FC = () => {
               "Mesmos bônus da oferta principal",
               "Mesma entrega e qualidade 4K",
               "Tudo igual à oferta original",
-              "Diferença: Preço reduzido pela metade"
+              "Diferença: Preço reduzido de última hora"
             ].map((benefit, i) => (
               <div key={i} className="flex items-center gap-3 bg-slate-900 p-4 rounded-2xl border border-slate-800">
                 <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center shrink-0">
@@ -80,10 +79,10 @@ const SpecialOffer: React.FC = () => {
           {/* Pricing Box */}
           <div className="bg-white text-slate-950 p-10 md:p-14 rounded-[3.5rem] shadow-[0_0_60px_rgba(255,102,0,0.2)] relative overflow-hidden max-w-lg mx-auto transform hover:scale-[1.02] transition-transform">
             <div className="absolute top-0 right-0 bg-orange-600 text-white px-6 py-2 rounded-bl-3xl font-black text-xs uppercase tracking-widest">
-              50% DE DESCONTO
+              DESCONTO FINAL
             </div>
             
-            <p className="text-slate-400 line-through text-xl font-bold mb-1">De R$ 15,99 (Metade de R$ 31,98)</p>
+            <p className="text-slate-400 line-through text-xl font-bold mb-1">De R$ 29,99</p>
             <p className="text-orange-600 font-black uppercase tracking-tighter text-sm mb-4">ÚLTIMA OPORTUNIDADE POR:</p>
             
             <div className="flex items-start justify-center gap-1 mb-8">
